@@ -1,0 +1,114 @@
+body {
+     font-family: sans-serif; 
+     line-height: 1.6; 
+     max-width: 800px; 
+     margin: 0 auto;
+     padding: 2rem;
+     color: #333; 
+}
+
+h1 { 
+    color: #2c3e50;
+}
+
+a { 
+    color: #3498db;
+    text-decoration: none; 
+}
+
+a:hover {
+     text-decoration: underline;
+}
+
+.project {
+    border: 1px solid #eee;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1506ec;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: -20px -20px 10px -20px auto;
+    max-width: 800px;
+}
+
+.top-menu-home-button {
+    font-weight: bold;
+    font-size: 1.2rem;
+    /* color: #333; */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    /* background-color: #333; */
+    color: #fff;
+}
+
+.top-menu-other {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 10px auto;
+    max-width: 800px;
+}
+
+.profile-panel {
+    background-color: #f0f0f0;
+    display: none;
+}
+
+.profile-panel-image {
+    object-fit: cover;
+}
+
+.profile-panel-image-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0rem;
+}
+
+.profile-panel-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: -1rem;
+}
+
+.profile-panel-title {
+    font-size: 1.2rem;
+    margin-top: -2.5rem;
+}
+
+.profile-panel-links {
+    font-size: 1.2rem;
+    margin-top: -1.5rem;
+}
+
+.about-me{
+
+}
+
+.projects{
+    text-align: right;
+}
