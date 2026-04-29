@@ -1,62 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Gabriel Vilas Novas Sousa - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <div class="top-menu">
-            <div class="top-menu-home-button">
-                <a href="index.html">Home</a>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+    
+    <nav class="flex justify-between items-center bg-[#1506ec] py-4 px-8 sticky top-0 z-50 shadow-md">
+        <div class="text-xl">
+            <a href="#home" class="text-white font-bold transition-opacity duration-200 hover:opacity-80 hover:no-underline">Home</a>
+        </div>
+        <div class="flex gap-6 text-lg">
+            <a href="#about" class="text-white font-bold transition-opacity duration-200 hover:opacity-80 hover:no-underline">About</a>
+            <a href="#skills" class="text-white font-bold transition-opacity duration-200 hover:opacity-80 hover:no-underline">Skills</a>
+            <a href="#projects" class="text-white font-bold transition-opacity duration-200 hover:opacity-80 hover:no-underline">Projects</a>
+            <a href="#contact" class="text-white font-bold transition-opacity duration-200 hover:opacity-80 hover:no-underline">Contact</a>
+        </div>
+    </nav>
+
+    <header id="home" class="flex flex-col lg:flex-row items-center lg:items-stretch justify-between py-12 px-8 bg-gray-200 max-w-5xl mx-auto my-8 rounded-lg shadow-sm gap-8">
+        
+        <div class="flex flex-col items-center lg:items-start text-center lg:text-left w-full lg:w-1/2">
+            <img class="w-36 h-36 rounded-full object-cover mb-4 border-4 border-[#1506ec]" src="images/aron.png" alt="Profile Picture">
+            <h1 class="text-3xl text-slate-800 mb-2 font-bold">Gabriel Vilas Novas Sousa</h1>
+            <p class="text-lg text-gray-600 mb-4">Computer Science Student | Software Engineer | Backend & Systems Builder</p>
+            <div class="text-lg text-blue-500 space-x-2">
+                <a href="https://github.com/vilas000" target="_blank" class="hover:underline">GitHub</a> 
+                <span class="text-gray-800">|</span> 
+                <a href="https://www.linkedin.com/in/vilas000/" target="_blank" class="hover:underline">LinkedIn</a> 
+                <span class="text-gray-800">|</span> 
+                <a href="mailto:gvns2002@gmail.com" class="hover:underline">Email</a>
             </div>
-            <div class="top-menu-other">
-                <a href="about.html">About</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="w-full lg:w-1/2 flex flex-col">
+            <div class="bg-white rounded-lg shadow p-5 h-full flex flex-col border border-gray-200">
+                <div class="flex justify-between items-center mb-3 border-b pb-2">
+                    <h2 class="text-lg font-bold text-slate-800">Latest Logs</h2>
+                    <a href="#" class="text-sm text-blue-500 hover:underline">View all &rarr;</a>
+                </div>
+                
+                <div class="overflow-y-auto max-h-56 space-y-3 pr-2 custom-scrollbar">
+                    
+                    <div class="bg-gray-50 p-3 rounded border border-gray-100">
+                        <span class="text-xs text-gray-500 font-bold">April 29, 2026</span>
+                        <p class="text-sm text-gray-700 mt-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore accusantium consectetur totam culpa aut vel nesciunt corporis, praesentium qui nulla eveniet fugit magnam delectus quisquam est! Cupiditate deserunt mollitia officiis!</p>
+                    </div>
+
+                    <div class="bg-gray-50 p-3 rounded border border-gray-100">
+                        <span class="text-xs text-gray-500 font-bold">April 24, 2026</span>
+                        <p class="text-sm text-gray-700 mt-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo distinctio et dolor alias provident, eum tempora exercitationem qui! Iusto ex beatae excepturi modi voluptas impedit laboriosam quibusdam fuga perferendis totam.</p>
+                    </div>
+
+                    <div class="bg-gray-50 p-3 rounded border border-gray-100">
+                        <span class="text-xs text-gray-500 font-bold">April 15, 2026</span>
+                        <p class="text-sm text-gray-700 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate perferendis ducimus eum dolores! Fuga in dolorem non beatae blanditiis voluptatibus. Autem molestiae culpa fuga voluptates? Ex facilis error quibusdam iusto.</p>
+                    </div>
+
+                </div>
             </div>
         </div>
     </header>
 
-        <div class="profile-panel" id="panel">    
-            <div class="profile-panel-image">
-                <img class="profile-panel-image-img" src="images/aron.png" alt="Profile Picture">
-            </div>
-            <div class="profile-panel-name">
-                <h1>Gabriel Vilas Novas Sousa</h1>
-            </div>
-            <div class="profile-panel-title">
-                <p>Computer Science Student | Software Engineer | Backend & Systems Builder</p>
-            </div>
-            <div class="profile-panel-links">
-                <a href="https://github.com/yourusername">GitHub</a> | 
-                <a href="https://linkedin.com/in/yourprofile">LinkedIn</a> | 
-                <a href="mailto:your.email@example.com">Email</a>
-            </div>
+    <section id="about" class="relative py-24 px-8 lg:px-32 flex justify-start items-center bg-fixed bg-center bg-no-repeat bg-cover bg-[url('images/cs1.jpg')]">
+        <div class="bg-white/95 p-12 rounded-lg max-w-3xl w-full shadow-xl">
+            <h2 class="text-2xl text-slate-800 font-bold mb-4">About Me</h2>
+            <p class="mb-4">U.S. Citizen living in Brazil (no visa required). 7th-semester CS student (GPA 8.7/10) with hands-on experience developing, building compilers, network sockets, and working with LLMs. Looking for a high-impact internship where I'll do my very best to help the company as much as I can.</p>
         </div>
-    </header>
+    </section>
 
-    <hr>
-    <div class="about-me" id="panel">
-        <section>
-            <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis ligula nulla. Donec dui enim, vulputate a nibh vel, congue faucibus massa. Nulla imperdiet, magna vel pellentesque pellentesque, augue sapien iaculis nibh, sit amet suscipit est tellus eget ante. Ut dictum venenatis dapibus. Mauris blandit ex laoreet, lobortis lacus ut, tincidunt ex. Donec dignissim sodales dolor, sit amet varius tellus. Fusce consequat vitae mi egestas elementum. Phasellus dolor orci, imperdiet at pellentesque non, dictum nec eros. Fusce est enim, interdum quis eleifend eget, fringilla non enim. Suspendisse laoreet felis augue, sit amet aliquam risus commodo ac. Proin ut commodo ex, quis pulvinar augue. Phasellus sodales rhoncus dolor, at malesuada risus mollis nec. Vestibulum at dolor justo. Fusce sed risus et orci laoreet sodales non id arcu.
-            </p>
-        </section>
-    </div>
+    <section id="skills" class="relative py-24 px-8 lg:px-32 flex justify-end items-center bg-fixed bg-center bg-no-repeat bg-cover bg-[url('images/cs2.jpg')]">
+        <div class="bg-white/95 p-12 rounded-lg max-w-3xl w-full shadow-xl">
+            <h2 class="text-2xl text-slate-800 font-bold mb-4 text-right">Tools & Skills</h2>
+            <ul class="list-none text-lg">
+                <li class="mb-3 pb-3 border-b border-gray-200 last:border-b-0 text-right"><strong>Languages:</strong> dsdssd, dsdssd, dsdsdssd</li>
+                <li class="mb-3 pb-3 border-b border-gray-200 last:border-b-0 text-right"><strong>Databases:</strong> sdsdsdsds, dsdssdds, dsdsdsds</li>
+            </ul>
+        </div>
+    </section>
 
-    <div class="projects" id="panel">
-        <section>
-            <h2>Projects</h2>
-            <div class="project">
-                <h3><a href="link-to-project">Project Name 1</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis ligula nulla. Donec dui enim, vulputate a nibh vel, congue faucibus massa. Nulla imperdiet, magna vel pellentesque pellentesque, augue sapien iaculis nibh, sit amet suscipit est tellus eget ante. Ut dictum venenatis dapibus. Mauris blandit ex laoreet, lobortis lacus ut, tincidunt ex. Donec dignissim sodales dolor, sit amet varius tellus. Fusce consequat vitae mi egestas elementum. Phasellus dolor orci, imperdiet at pellentesque non, dictum nec eros. Fusce est enim, interdum quis eleifend eget, fringilla non enim. Suspendisse laoreet felis augue, sit amet aliquam risus commodo ac. Proin ut commodo ex, quis pulvinar augue. Phasellus sodales rhoncus dolor, at malesuada risus mollis nec. Vestibulum at dolor justo. Fusce sed risus et orci laoreet sodales non id arcu.
-                    .</p>
+    <section id="projects" class="relative py-24 px-8 lg:px-32 flex justify-right items-center bg-fixed bg-center bg-no-repeat bg-cover bg-[url('images/cs3.jpg')]">
+        <div class="bg-white/95 p-12 rounded-lg max-w-3xl w-full shadow-xl">
+            <h2 class="text-2xl text-slate-800 font-bold mb-4">Projects</h2>
+            
+            <div class="border border-gray-300 p-6 mb-6 rounded bg-white transition-transform duration-200 hover:-translate-y-1 hover:shadow-md last:mb-0">
+                <h3 class="text-xl text-slate-800 font-bold mb-2">
+                    <a href="#" target="_blank" class="text-blue-500 hover:underline">Knowledge Graph Integration</a>
+                </h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius in dolorum error necessitatibus autem. Natus culpa sint suscipit rerum aperiam! Rerum doloremque odit laboriosam rem? Ullam illo itaque facilis illum.</p>
             </div>
-        </section>
-    </div>
-   
+            
+            <div class="border border-gray-300 p-6 mb-6 rounded bg-white transition-transform duration-200 hover:-translate-y-1 hover:shadow-md last:mb-0">
+                <h3 class="text-xl text-slate-800 font-bold mb-2">
+                    <a href="#" target="_blank" class="text-blue-500 hover:underline">Custom Linux Environment Setup</a>
+                </h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat libero ad architecto minus fugit exercitationem perferendis eveniet similique praesentium nisi fuga corrupti hic, iure laborum voluptatem obcaecati omnis magnam ducimus.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-slate-800 text-white text-center pt-16 pb-8 px-4">
+        <h2 class="text-2xl text-white font-bold mb-4">Get in Touch</h2>
+        <p>Always open to discussing new challenges.</p>
+        
+        <div class="my-8 flex flex-wrap justify-center gap-8">
+            <a href="mailto:gvns2002@gmail.com" class="text-blue-400 font-bold text-lg hover:underline">gvns2002@gmail.com</a>
+            <a href="mailto:gabriel.novas@aluno.ufop.edu.br" class="text-blue-400 font-bold text-lg hover:underline">gabriel.novas@aluno.ufop.edu.br</a>
+            <a href="https://github.com/vilas000" target="_blank" class="text-blue-400 font-bold text-lg hover:underline">GitHub</a>
+            <a href="https://www.linkedin.com/in/vilas000/" target="_blank" class="text-blue-400 font-bold text-lg hover:underline">LinkedIn</a>
+        </div>
+        
+        <p class="mt-8 text-sm text-gray-400">&copy; 2026 Gabriel Vilas Novas Sousa</p>
+    </footer>
 </body>
 </html>
